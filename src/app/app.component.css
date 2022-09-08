@@ -5,12 +5,24 @@ p {
   display: flex;
   flex-direction: column;
   width: 200px;
-  height: 400px;
+  height: 250px;
   justify-content: space-around;
+  margin: auto;
 }
 .btn {
   color: white;
   background-color: blue;
   width: 80px;
   height: 30px;
+}
+.items {
+  display: flex;
+  flex-direction: row;
+  width: 150px;
+  justify-content: space-around;
+  margin: auto;
+}
+
+li {
+  list-style: none;
 }

@@ -1,6 +1,3 @@
-<hello name="{{ name }}"></hello>
-<p>Start editing to see some magic happen :)</p>
-
 <div class="list">
   <input
     type="text"
@@ -10,10 +7,10 @@
   />
   <input type="text" placeholder="Type a goal description here" name="gdesc" />
 
-  <button class="btn" (click)="addGoal()">Add a New Goal</button>
+  <button class="btn" (click)="addGoal()">Add Goal</button>
 </div>
 
-<ul *ngFor="let goal of goals; let i = index">
+<ul class="items" *ngFor="let goal of goals; let i = index">
   <button class="btn" (click)="delete(i)">Delete</button>
   <li>{{ goal }}</li>
 </ul>
