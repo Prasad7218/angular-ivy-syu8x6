@@ -7,6 +7,12 @@ import { Component, VERSION } from '@angular/core';
 })
 export class AppComponent {
   // name = 'Angular ' + VERSION.major;
+  users: any;
+  constructor(private userData: UsersdataService) {
+    this.userData.users().subscibe((data) => {
+      this.users = data;
+    });
+  }
 
   public name: any;
   public goals = [];
@@ -20,5 +26,8 @@ export class AppComponent {
   }
   delete(i) {
     this.goals.splice(i, 1);
+  }
+  edit(i) {
+    this.name == '';
   }
 }

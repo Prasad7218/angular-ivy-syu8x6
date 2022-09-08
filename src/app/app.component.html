@@ -13,4 +13,5 @@
 <ul class="items" *ngFor="let goal of goals; let i = index">
   <button class="btn" (click)="delete(i)">Delete</button>
   <li>{{ goal }}</li>
+  <button class="btn" (click)="edit(i)">Edit</button>
 </ul>
