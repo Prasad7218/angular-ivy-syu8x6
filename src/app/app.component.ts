@@ -8,11 +8,11 @@ import { Component, VERSION } from '@angular/core';
 export class AppComponent {
   // name = 'Angular ' + VERSION.major;
   users: any;
-  constructor(private userData: UsersdataService) {
-    this.userData.users().subscibe((data) => {
-      this.users = data;
-    });
-  }
+  // constructor(private userData: UsersdataService) {
+  //   this.userData.users().subscibe((data) => {
+  //     this.users = data;
+  //   });
+  // }
 
   public name: any;
   public goals = [];
